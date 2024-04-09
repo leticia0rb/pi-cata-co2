@@ -1,0 +1,597 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.container h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: cursive;
+    color: #6B9080
+}
+
+header {
+    padding: 0;
+    background-color: #F6FFF8;
+    height: 60px;
+
+}
+
+.logo img {
+    float: left;
+    height: 50px;
+    margin: 4px 10px;
+    padding-left: 10px;
+}
+
+
+.logo span {
+    float: left;
+    display: block;
+    margin: 17px 5px;
+    color: #A4C3B2;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: cursive;
+
+}
+
+/*
+Menu
+*/
+
+
+nav.menu-desktop {
+    float: right;
+    margin: 0;
+    padding-right: 10px;
+    
+}
+
+nav.menu-desktop ul {
+    position: relative;
+    top: 15px;
+}
+
+nav.menu-desktop li {
+    padding: 5px 10px;
+    font-weight: lighter;
+    display: inline-block;
+}
+
+nav.menu-desktop a {
+    color: #6B9080;
+    text-decoration: none;
+
+}
+
+nav.menu-desktop li.selected {
+    font-weight: bold;
+}
+
+nav.menu-desktop a:hover {
+    text-decoration: underline;
+}
+
+
+/*
+Colunas - Index
+*/
+
+.sidecharleft {
+    float: left;
+    margin: 0px;
+    width: 20%;
+    height: 930px;
+    padding: 10px;
+    background-color: #F6FFF8;
+    border: 1px solid #F6FFF8;
+    color: #73ba9b; 
+
+
+}
+
+.sidecharleft h3 {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.sidecharleft p {
+    margin-top: 4px;
+    color: gray;
+    text-align: center;
+
+}
+
+.content {
+    float: left;
+    width: 60%;
+    margin: 0px;
+    background-color: white;
+    height: 930px;
+    padding: 10px;
+    border: 1px solid white;
+
+}
+.content img {
+    max-width: 100%;
+    padding: 10px 0;
+    border-radius: 40px;
+}
+
+.content p {
+    padding: 10px;
+    text-align: justify;
+    font-style: italic;
+    font-weight: normal;
+    color: #56766A;
+}
+
+.sidecharright {
+    float: left;
+    width: 20%;
+    margin: 0px;
+    height: 930px;
+    padding: 10px;
+    background-color: #F6FFF8;
+    border: 1px solid #F6FFF8;
+    color: #73ba9b; 
+
+
+}
+
+
+.sidecharright h3 {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.sidecharright p {
+    margin-top: 4px;
+    color: gray;
+    text-align: center;
+}
+
+.pic {
+    position: relative;
+    width: 60%;
+    padding-top: 60%;
+    margin: 20px auto;
+}
+
+.pic-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    background-color: #A4C3B2; /*caso a imagem não carregue, fica a cor */
+}
+
+
+/*
+Rodapé
+*/
+
+#footer {
+    float: left;
+    width: 100%;
+    background-color: #F6FFF8;
+    color: #A4C3B2;
+    margin: 0;
+    height: 60px;
+    padding: 22px 0 0 0;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+/*
+Página sobre
+*/
+
+.title-page {
+    padding: 70px;
+    width: 100%;
+    min-height: 200px;
+    background-image: url(../img/aguagas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+} 
+
+.title-page h2 {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+} 
+
+/*
+Notícias
+*/
+
+.sobre-noticia {
+    padding: 30px 0;
+} 
+
+.sobre-noticia-single img {
+    float: left;
+    max-width: 100%;
+    width: 30%;
+    margin-left: 15px;
+} 
+
+.sobre-noticia-single p {
+    font-size: 16px;
+    padding: 10px 15px;
+    float: left;
+    width: 68.5%;
+    text-align: justify;
+} 
+
+.paragrafo-noticia-single p {
+    margin-top: 10px;
+    padding: 0 15px;
+    text-align: justify;
+} 
+
+/*
+Botão
+*/
+
+.button {
+
+    width: 200px;
+    text-align: center;
+    border: none;
+    padding: 16px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 50px;
+    transition-duration: 0.4s;
+
+}
+
+.button2 {
+    background-color: #d5f2e3;
+    border: 2px solid #73ba9b;
+    color: #73ba9b;
+    margin-top: 150px;
+}
+
+.button2:hover {
+    background-color: #73ba9b;
+    border: 2px solid #d5f2e3;
+    color: #022f40;
+    font-weight: 700;
+} 
+
+.paralax {
+    padding: 30px 0;
+    width: 100%;
+    min-height: 400px;
+    background-image: url("../img/orca1.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+} 
+
+/*
+Equipe - Página Sobre
+*/
+
+.equipe {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.equipe-circles {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.equipe-circle-single {
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.equipe-circle-single h3 {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.equipe-circle-single p {
+    margin-top: 4px;
+    color: gray;
+}
+
+.avatar2 {
+    position: relative;
+    width: 60%;
+    padding-top: 60%;
+    margin: 0 auto;
+}
+
+.avatar2-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    background-color: #A4C3B2; /*caso a imagem não carregue, fica a cor */
+}
+
+
+/*
+Artigos
+*/
+
+.container1 {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #eae8ff;
+}
+
+.container1 h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: cursive;
+    color: #6B9080;
+}
+
+.container2 {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: white;
+    border: dotted;
+    color: #2d3142;
+}
+
+.container2 h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: cursive;
+    color: #6B9080;
+}
+
+.list h2{
+    margin: 0 180px;
+
+}
+
+.list p{
+    margin: 0 30px;
+    font-size: large;
+    font-family: cursive;
+    font-style: italic;
+    color: #2d3142;
+}
+
+.list a{
+    text-decoration: none;
+}
+
+.list ul {
+    margin: 0 50px;
+    padding: 10px;
+    line-height: 35px;
+}
+
+.sobre-artigo {
+    padding: 30px 0;
+} 
+
+.sobre-artigo-single img {
+    float: left;
+    max-width: 100%;
+    width: 50%;
+    margin-left: 15px;;
+} 
+
+.sobre-artigo-single p {
+    font-size: 16px;
+    padding: 10px 15px;
+    float: left;
+    width: 48%;
+    text-align: justify;
+} 
+
+.sobre-artigo-single a{
+    padding: 10px auto;
+    font-size: large;
+    color: #73ba9b;
+    text-decoration: none;
+}
+
+.paragrafo-artigo-single p {
+    margin-top: 10px;
+    padding: 0 15px;
+    text-align: justify;
+} 
+
+.paragrafo-artigo-single a{
+    padding: 10px auto;
+    font-size: large;
+    color: #73ba9b;
+    text-decoration: none;
+}
+.paragrafo-artigo-single ol{
+    padding: 5px 60px;
+}
+
+.paragrafo-artigo-single li{
+    margin: 15px 38px; 
+    font-family: cursive; 
+    color: #6B9080; 
+    font-size: large; 
+    font-style: italic;
+}
+
+/*
+Empresas
+*/
+
+.corp-table {
+    padding: 10px 0;
+}
+
+.corp-table h2 {
+    color: #56766A;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: inherit;
+
+}
+
+.corp-table p{
+    margin: 0 30px;
+    padding: 5px 0;;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+    font-size: 18px;
+    color: #6B9080;
+    font-style: italic;
+}
+
+.corp-table img {
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    float: right;
+    width: 28%;
+    min-height: 666px;
+}
+
+.corp-table table {
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    float: right;
+    border: #EAF4F4;
+    border-style: dotted;
+    border-width: thick;
+    background-color: #6B9080;
+    border-spacing: 20px;
+    text-align: center;
+    width: 64.6%;
+}
+
+.corp-table th{
+    border-bottom: 1px dotted #A4C3B2;
+    color: #F6FFF8;    
+    text-align: center;    
+}
+
+.corp-table td{
+    border-bottom: 1px dotted #A4C3B2;
+    color: #EAF4F4;
+    
+}
+
+/*
+Contato
+*/
+
+.contato {
+    min-height: 400px;
+    padding: 30px 0;
+}
+
+.contato .w50,
+.contato .w100 {
+    padding: 0 10px;
+}
+
+.formulario form {
+    margin-top: 10px;
+}
+
+.formulario h2 {
+    background: #d5f2e3;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-left: 5px solid #73ba9b;
+    padding: 5px, 0;
+}
+
+.w60 {
+    width: 60%;
+    float: left;
+}
+
+.w40 {
+    width: 40%;
+    float: left;
+}
+
+.formulario input[type=text],
+.formulario input[type=mail] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+.formulario textarea {
+    width: 100%;
+    height: 140px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.tags-form {
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+.tags-form h2 {
+    font-weight: bolder;
+    
+}
+
+.tags-form p {
+    font-weight: lighter;
+}
+
+.tags-form p.tag-contato {
+    color: white;
+    background: #A4C3B2;
+    margin-top: 8px;
+    padding: 8px 4px;
+    text-align: center;
+}
+
+
+
